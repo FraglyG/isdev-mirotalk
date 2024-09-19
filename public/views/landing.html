@@ -67,6 +67,10 @@
         width: 100%;
       }
     }
+
+    #logo-container:hover {
+      cursor: pointer;
+    }
   </style>
 </head>
 
@@ -271,6 +275,11 @@
     if (name.length < 1) return alert("Please enter a room name to join a room");
 
     window.location.href = `/join/${name}`;
+  });
+
+  const logo = document.getElementById("logo-container");
+  logo.addEventListener("click", () => {
+    window.location.href = "https://isdev.co";
   });
 </script>
 
